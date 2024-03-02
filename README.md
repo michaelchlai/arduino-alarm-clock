@@ -1,9 +1,9 @@
 # arduino-alarm-clock
 ---
-This project implements alarm clock functionalities on an Arduino board in C.
+This project implements alarm clock functionalities on an Arduino board in C++.
 
 - Hardware: Adafruit RGB 16x2 Character LCD Shield
-- Programming Language: C
+- Programming Language: C++
 
 ### Functional Requirements
 ---
@@ -26,6 +26,7 @@ This project implements alarm clock functionalities on an Arduino board in C.
 
 The default state when the program is initiated. 
 It displays the curent time with the alarm off; on the lcd display, the time is on the top left corner, with the rest of the screen accommodating what the button presses will do.
+
 Buttons:
 - Up: edit the time
 - Down: edit the alarm time
@@ -35,14 +36,12 @@ Buttons:
 ![](https://github.com/michaelchlai/arduino-alarm-clock/blob/master/display_time_alarm_off.png)
 
 
-
 **DISPLAY_TIME_ALARM_ON** 
 	
  Essentially the same as DISPLAY_ALARM_TIME_OFF with the alarm on. 
 When the current time reaches the alarm time, the alarm will go off. The functionality of the buttons are also the same as DISPLAY_ALARM_TIME_OFF but with the left button turning off the alarm instead of turning it on.
 
 ![](https://github.com/michaelchlai/arduino-alarm-clock/blob/master/display_time_alarm_on.png)
-
 
 
 **DISPLAY_ALARM_TIME_OFF**
@@ -56,7 +55,6 @@ Identical functionality as DISPLAY_ALARM_TIME_OFF, but reverts to DISPLAY_TIME_A
 ![](https://github.com/michaelchlai/arduino-alarm-clock/blob/master/display_alarm_time.png)
 
 
-
 **SET_CURRENT_TIME_OFF** and **SET_CURRENT_TIME_ON**
 
 Enables user to edit the current time using the arrow buttons.
@@ -64,7 +62,6 @@ Toggled from main menu (up button on DISPLAY_TIME_ALARM_OFF/DISPLAY_TIME_ALARM_O
 Current time is set when the 'select' button is pressed, which brings up the main menu with the updated time.
 
 ![](https://github.com/michaelchlai/arduino-alarm-clock/blob/master/set_current_time.png)
-
 
 
 **SET_ALARM_TIME**
@@ -76,14 +73,12 @@ Alarm time is set when the 'select' button is pressed, which brings up the main 
 ![](https://github.com/michaelchlai/arduino-alarm-clock/blob/master/set_alarm_time.png)
 
 
-
 **BUZZER_ON**
 
 Toggled when current time is the alarm time, and the alarm is on. 
 The LCD display will flash multiple colours, indicating that the alarm is going off.
 
 ![](https://github.com/michaelchlai/arduino-alarm-clock/blob/master/buzzer_on.gif)
-
 
 
 **SNOOZE**
