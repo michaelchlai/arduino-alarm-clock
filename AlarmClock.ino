@@ -1,5 +1,3 @@
-//USE ENUM STATES FOR STATE, USE DEFINE FOR BUTTONS?
-
 #include <Wire.h>
 #include <Adafruit_RGBLCDShield.h>
 
@@ -527,4 +525,3 @@ void snooze()
   displayTime();  
   }
 }
-
